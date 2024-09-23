@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Unifynd",
+  "url": "https://unifynd.in",
+  "description": "Unifynd helps Indian students find top international colleges with innovative tools and data. Discover college information, fee calculators, and more.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://unifynd.in/?search={search_term}",
+    "query-input": "required name=search_term"
+  },
+  "sameAs": ["https://twitter.com/unifynd", "https://facebook.com/unifynd"],
+  "mainEntity": [
+    {
+      "@type": "WebPage",
+      "name": "Home",
+      "url": "https://unifynd.in",
+      "description": "The home page of Unifynd, offering resources and tools for international college admissions."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Blogs",
+      "url": "https://unifynd.in/blogs",
+      "description": "Explore our latest blogs on international college admissions, tips, and advice."
+    },
+    {
+      "@type": "WebPage",
+      "name": "College Info",
+      "url": "https://unifynd.in/college-info",
+      "description": "Comprehensive information about various international colleges, including admission criteria and programs."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Fee Calculator",
+      "url": "https://unifynd.in/fee",
+      "description": "Use our fee calculator to estimate your college fees and plan your budget effectively."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Profile",
+      "url": "https://unifynd.in/profile",
+      "description": "Manage your profile and view your saved colleges and application details."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Authentication",
+      "url": "https://unifynd.in/auth",
+      "description": "Sign up, log in, and manage your account settings with Unifynd."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Explore",
+      "url": "https://unifynd.in/explore",
+      "description": "Explore different colleges and countries to find the best fit for your education."
+    },
+    {
+      "@type": "WebPage",
+      "name": "US Colleges",
+      "url": "https://unifynd.in/us",
+      "description": "Find detailed information about colleges in the United States, including admission requirements and programs."
+    },
+    {
+      "@type": "WebPage",
+      "name": "UK Colleges",
+      "url": "https://unifynd.in/uk",
+      "description": "Discover colleges in the United Kingdom, including program details and application processes."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Canada Colleges",
+      "url": "https://unifynd.in/canada",
+      "description": "Explore colleges in Canada with information on programs, admissions, and tuition fees."
+    },
+    {
+      "@type": "WebPage",
+      "name": "UK College Info",
+      "url": "https://unifynd.in/uk-college-info",
+      "description": "In-depth information about colleges in the UK, including special programs and application tips."
+    }
+  ]
+}

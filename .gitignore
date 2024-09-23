@@ -1,0 +1,8 @@
+node_modules
+firebase.json
+database.rules.json
+firestore.rules
+serviceAccountKey.json
+setAdminClaims.js
+storage.rules
+remoteconfig.template.json

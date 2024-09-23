@@ -1,0 +1,57 @@
+/* Table Styles */
+.table-gradient {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(#660ef4, #a24df6, #a24df6);
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    overflow: hidden; /* Ensures rounded corners are visible */
+  }
+  
+  /* Ensure all cells have the same background and text color, and are center-aligned */
+  .table-gradient th,
+  .table-gradient td {
+    background: inherit;
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    text-align: center; /* Center align all cells */
+    vertical-align: middle; /* Vertically center content */
+  }
+  
+  /* Style for the table header */
+  .table-gradient thead th {
+    background-color: #000;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Thead rows inherit the background */
+  .table-gradient thead {
+    background: inherit;
+    font-weight: bold;
+  }
+  
+  /* Style for the table body rows */
+  .table-gradient tbody tr {
+    background: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for table rows */
+  .table-gradient tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Style for odd rows */
+  .table-gradient tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Style for even rows */
+  .table-gradient tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+  

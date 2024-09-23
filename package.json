@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "firebase": "^10.13.0",
+    "firebase-admin": "^12.2.0",
+    "firebase-functions": "^5.0.1",
+    "react-router-dom": "^6.25.1",
+    "vite": "^5.3.5"
+  }
+}

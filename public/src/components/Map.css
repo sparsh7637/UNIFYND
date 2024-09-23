@@ -1,0 +1,33 @@
+/* Map.css */
+.map-container {
+    position: relative; /* Ensure children are positioned correctly */
+  }
+  
+  .note-toggle-bar {
+    width: 20%;
+    cursor: pointer;
+    background-color: #090909; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+  
+  .note-section {
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition for expanding/collapsing */
+    max-height: 0; /* Initially collapsed */
+    overflow-y: hidden; /* Hide overflow content */
+    padding: 0 10px; /* No padding initially */
+  }
+  
+  .note-section.visible {
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition for expanding/collapsing */
+    max-height: 30vh; /* Adjust this value as needed */
+    padding: 10px; /* Add padding when visible */
+  }
+  
+  .wrapper {
+    transition: height 0.3s ease; /* Smooth transition effect */
+  }
+  

@@ -1,0 +1,208 @@
+/* General body and container styles */
+#root {
+  width: 100%;
+}
+
+.bg-dark {
+  background-color: hsl(0, 0%, 0%) !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.givemargin {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: initial;
+  position: absolute ;
+  display: flex;
+}
+
+@media (min-width: 850px) {
+  .givemargin {
+    /* background-color: #007bff; */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw; /* Prevents overflow */
+  flex-wrap: nowrap; /* Ensures items stay in one line */
+  position: relative; /* Ensure the z-index works */
+
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  max-width: 30vw; /* Ensure the brand does not take up too much space */
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  padding: 0.25rem 0.5rem; /* Reduce padding to decrease size */
+  font-size: 1.2rem; /* Reduce font size */
+  line-height: 1.5;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: box-shadow 0.15s ease-in-out;
+  width: 45px; /* Adjust width */
+  height: 45px; /* Adjust height */
+  z-index: 1050; /* Ensure the toggler button is on top */
+  position: relative; /* Ensure dropdown starts below this */
+}
+
+/* Styling for small screens (up to 768px) */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    flex-grow: 1;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: absolute; /* Make the collapse dropdown menu appear below the toggler */
+    top: 100%; /* Align it below the toggler */
+    left: 0; /* Ensure it starts from the left edge of the navbar */
+    right: 0; /* Ensure it spans the full width */
+    background-color: #090909; /* Match background color of navbar */
+    z-index: 2050; /* Increase z-index to ensure it overlaps all other content */
+    padding: 10px 0; /* Add padding for spacing */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  }
+}
+
+
+/* Styling for larger screens (above 768px) */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important; /* Ensure the items are displayed as a flex container */
+    flex-grow: 1; /* Allow the items to take up available space */
+    align-items: center;
+    justify-content: flex-end;
+    position: static; /* Reset position for larger screens */
+    background-color: transparent; /* Reset background color */
+    box-shadow: none; /* Remove shadow */
+    padding: 0; /* Remove padding */
+    margin:0%;
+    width: "100%"
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 60vw; /* Adjust the max width to ensure it doesn't push the toggler */
+}
+
+.nav-item {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+.container {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  align-items: center;
+  max-height: 825px;
+  background-color: #f4f4f408;
+  /* border-radius: 30px; */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.126);
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* General table styling */
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.leaflet-control-attribution {
+  display: none !important; /* Hide Leaflet attribution */
+}
+
+/* Base style for hat images */
+.hat-image {
+  display: block;
+}
+
+/* Media query for smaller screens (e.g., less than 600px width) */
+@media (max-width: 800px) {
+  .hat-image {
+    display: none; /* Hide images on smaller screens */
+  }
+}

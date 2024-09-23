@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /auth
+Disallow: /profile
+
+# Allow all other pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://unifynd.in/sitemap.xml
